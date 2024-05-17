@@ -1,0 +1,58 @@
+name: Verify
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      changes-docs: ${{ steps.changes.outputs.docs}}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Python, Poetry & dependencies
+        uses: ./.github/actions/setup-poetry
+        with:
+          poetry-version: '1.8.3'
+          with-dependencies: 'dev'
+
+      - name: Prepare reports directory
+        run: |
+          mkdir reports
+
+      - name: Check code formatting
+        run: |
+          poe format-ci
+
+      - name: Check style guide
+        run: |
+          poe lint-ci
+        continue-on-error: true
+
+      - name: Analyze changes
+        uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2
+        id: changes
+        with:
+          filters: |
+            docs:
+              - 'docs/**'
+
+  publish-docs:
+    needs: verify
+    if: ${{ github.ref == 'refs/heads/main' && needs.verify.outputs.changes-docs == 'true' }}
+    uses: ./.github/workflows/publish.yaml

@@ -1,0 +1,68 @@
+name: Setup Poetry
+description: Setup poetry and python for dependency management and optionally install dependencies using cache. Python version is derived from pyproject.toml
+inputs:
+  poetry-version:
+    description: 'Poetry version to install'
+    required: false
+    default: '1.8'
+  install-dependencies:
+    description: 'Whether to install dependencies'
+    required: false
+    default: 'true'
+  with-dependencies:
+    description: 'Optional dependency groups to install additionally. Only used when install-dependencies is true.'
+    required: false
+  only-dependencies:
+    description: 'Only dependency groups to install, ignores mandatory groups if not specified. Only used when install-dependencies is true.'
+    required: false
+runs:
+  using: composite
+  steps:
+    - name: validate inputs
+      if: ${{ inputs.install-dependencies == 'true' }}
+      shell: bash
+      run: |
+        if [[ -n "${{ inputs.only-dependencies }}" && -n "${{ inputs.with-dependencies }}" ]]; then
+          echo "Error: only-dependencies and with-dependencies cannot be used together"
+          exit 1
+        fi
+
+    - name: Install pipx
+      shell: bash
+      run: |
+        sudo apt -y install pipx
+        echo "${HOME}/.local/bin" >> $GITHUB_PATH
+
+    - name: Install poetry
+      shell: bash
+      run: |
+        pipx install poetry==${{ inputs.poetry-version }}
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version-file: 'pyproject.toml'
+        cache: 'poetry'
+
+    - name: Instantiate only Poetry project
+      if: ${{ inputs.install-dependencies == 'false' }}
+      shell: bash
+      run: |
+        poetry install --only-root
+
+    - name: Install Poetry dependencies
+      if: ${{ inputs.install-dependencies == 'true' && inputs.with-dependencies != '' }}
+      shell: bash
+      run: |
+        poetry install --with ${{ inputs.with-dependencies }}
+
+    - name: Install Poetry dependencies
+      if: ${{ inputs.install-dependencies == 'true' && inputs.only-dependencies != '' }}
+      shell: bash
+      run: |
+        poetry install --only ${{ inputs.with-dependencies }}
+
+    - name: Add poetry venv to Github PATH
+      shell: bash
+      run: |
+        echo "$(poetry env info --path)/bin" >> $GITHUB_PATH
