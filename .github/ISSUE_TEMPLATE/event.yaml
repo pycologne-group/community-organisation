@@ -49,10 +49,8 @@ body:
       label: Speakers & Topics
       description: "Who might speak and about what?"
       value: "
-        1. Guido van Rossum
-          - Metaclasses in Python
-        2. Donald Knuth
-          - The Art of Computer Programming"
+        1. Guido van Rossum - Metaclasses in Python\
+        2. Donald Knuth - The Art of Computer Programming"
     validations:
       required: false
   - type: checkboxes
