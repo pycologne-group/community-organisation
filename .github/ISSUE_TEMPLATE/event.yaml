@@ -34,8 +34,8 @@ body:
       label: Speaker support
       description: Is speaker support required?
       options:
-        - label: Yes
-        - label: No
+        - label: "Yes"
+        - label: "No"
   - type: input
     id: location
     attributes:
