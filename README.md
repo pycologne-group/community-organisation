@@ -10,7 +10,7 @@ TODO
 
 ## Opening an Issue
 
-If you want to create a new event, we encourage you to open a new issue to track the required tasks. Please follow the [issue template](./.github/ISSUE_TEMPLATE/new-event.md).
+If you want to create a new event, we encourage you to open a new issue to track the required tasks. Please follow the [issue template](./.github/ISSUE_TEMPLATE/event.yaml).
 
 ## :satellite: Contact us
 
