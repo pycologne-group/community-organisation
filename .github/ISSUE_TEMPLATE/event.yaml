@@ -1,0 +1,117 @@
+name: Event
+description: Create a new event.
+title: "[Event]: <month> <date>th - <meetup-title> @ <location>"
+labels: ["event"]
+assignees:
+  - SampleAssignee
+body:
+  - type: input
+    id: organizer
+    attributes:
+      label: Head organizer
+      description: How can we get in touch with you?
+      placeholder: ex. email@example.com
+    validations:
+      required: true
+  - type: input
+    id: support_organizer
+    attributes:
+      label: Support organizer
+      description: How can we get in touch with you?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: input
+    id: slides_moderation
+    attributes:
+      label: Slides/Moderation
+      description: How can we get in touch with you?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: checkboxes
+    attributes:
+      label: Speaker support
+      description: Is speaker support required?
+      options:
+        - label: Yes
+        - label: No
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      placeholder: ex. Google HQ, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+    validations:
+      required: false
+  - type: textarea
+    id: speaker_topic
+    attributes:
+      label: Speakers & Topics
+      description: "Who might speak and about what?"
+      value: "
+        1. Guido van Rossum
+          - Metaclasses in Python
+        2. Donald Knuth
+          - The Art of Computer Programming"
+    validations:
+      required: false
+  - type: checkboxes
+    attributes:
+      label: Month before
+      options:
+        - label: Define speakers
+        - label: Send speakers guidelines email
+        - label: Announce event with speakers, location, photo policy on meetup page
+        - label: Define hosts & collect host information
+        - label: Send host guidelines email
+        - label: Organise food/ drinks
+        - label: Post event on LinkedIn when announced
+        - label: Check with speaker if coaches are needed and search for coaches
+  - type: checkboxes
+    attributes:
+      label: Two weeks before
+      options:
+        - label: Repost event
+        - label: Check with speaker about installation instructions/reading material and update announcement
+        - label: Update meetup announcement with agenda, networking breaks, if snacks or drinks will be available
+        - label: Check-in with hosts and ask if support is needed for reception
+  - type: checkboxes
+    attributes:
+      label: Week before
+      options:
+        - label: Remind attendees to install requirements with comment and/or message on meetup
+        - label: Send coaches the workshop/relevant material
+        - label: Dry run with speaker
+  - type: checkboxes
+    attributes:
+      label: Week of the event
+      options:
+        - label: Ask host if attendees list is needed and/or special location directions
+        - label: Double check with host. Microphone (if needed), soft drinks, power plugs, internet
+        - label: Send host mail to print PyCologne arrow signs
+        - label: Prepare introduction slides with contact mail and link to discord server (in particular the feedback channel)
+  - type: checkboxes
+    attributes:
+      label: Day of the event
+      options:
+        - label: Check projector, microphone, table setup, power extensions, recording if available
+        - label: Support speaker(s) to test equipment
+        - label: Stick PyCologne signs to guide attendees the location
+        - label: Hang up or put out print outs with the WIFI (or find a similar solution)
+        - label: Manage reception, give name tags if available
+  - type: checkboxes
+    attributes:
+      label: During the event
+      options:
+        - label: Do introduction and Community announcements
+        - label: Take photos of all the speakers and audience
+        - label: Tweet about it (or after the event with photos)
+  - type: checkboxes
+    attributes:
+      label: After the event
+      options:
+        - label: Tweet after event (if not done during the event)
+        - label: Backup photos
+        - label: Add the event's slides/exercises/material to this repository (via PR)
+        - label: Email sponsors & host to thank them
+        - label: Adjust guides if valuable feedback came up
