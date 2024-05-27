@@ -1,0 +1,1 @@
+Sitemap: https://pycologne-group.github.io/community-organisation/sitemap.xml

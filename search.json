@@ -2,41 +2,51 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "docs",
+    "title": "PyCologne Community Website",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books",
+    "text": "This is the PyCologne Community website. Here we share knowledge, pin our documentation and distribute information for external parties.",
     "crumbs": [
-      "Preface"
+      "Welcome"
     ]
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "PyCologne Community Website",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "This is the PyCologne Community website. Here we share knowledge, pin our documentation and distribute information for external parties.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "Welcome"
     ]
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.",
+    "objectID": "index.html#what-is-pycologne",
+    "href": "index.html#what-is-pycologne",
+    "title": "PyCologne Community Website",
+    "section": "What is PyCologne?",
+    "text": "What is PyCologne?\nWe are a volunteer-led local Python Community Group in Cologne and invite everyone to participate to make this community thrive! We follow the code of conduct of the Python Software Foundation.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "Welcome"
     ]
   },
   {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "objectID": "index.html#documentation",
+    "href": "index.html#documentation",
+    "title": "PyCologne Community Website",
+    "section": "Documentation",
+    "text": "Documentation\nYou are looking at it. This will grow over time. For event-organisation we use the GitHub repository in the resources below.",
     "crumbs": [
-      "References"
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#resources",
+    "href": "index.html#resources",
+    "title": "PyCologne Community Website",
+    "section": "Resources",
+    "text": "Resources\nA few places where you can find us:\n\nGitHub\nMeetup\nDiscord",
+    "crumbs": [
+      "Welcome"
     ]
   }
 ]
