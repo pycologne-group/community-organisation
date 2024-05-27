@@ -20,9 +20,6 @@ website:
       - icon: github
         href: https://github.com/pycologne-group
         text: "PyCologne GitHub Organisation"
-      - icon: meetup
-        href: https://www.meetup.com/pycologne
-        text: "PyCologne Meetup Group" 
     style: "docked"
     search: true
     collapse-level: 1
