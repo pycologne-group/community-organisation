@@ -6,7 +6,7 @@ A repository to track tasks related to organisation of our community.
 
 ### Generating the docs locally
 
-TODO
+We use [Quarto](https://quarto.org/) to build our [community documentation site](https://pycologne-group.github.io/community-organisation/). To get started, have a look [here](https://quarto.org/docs/get-started/).
 
 ## Opening an Issue
 
