@@ -1,23 +1,45 @@
 project:
-  type: book
+  type: website 
 
-book:
-  title: "docs"
-  author: "PyCologne Community"
-  date: "5/17/2024"
-  chapters:
-    - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
+website:
+  page-navigation: true
+  title: "PyCologne"
+  site-url: "https://pycologne-group.github.io/community-organisation"
+  repo-url: "https://github.com/pycologne-group/community-organisation"
+  repo-actions: [edit, issue]
 
-bibliography: references.bib
+  page-footer:
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    left: "&copy; 2024 PyCologne. All Rights Reserved."
+  
+  sidebar:
+    logo: "images/logo.svg.png"
+    pinned: true
+    align: center
+    tools: 
+      - icon: github
+        href: https://github.com/pycologne-group
+        text: "PyCologne GitHub Organisation"
+      - icon: meetup
+        href: https://www.meetup.com/pycologne
+        text: "PyCologne Meetup Group" 
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - href: index.qmd
+        text: Welcome
 
 format:
   html:
-    theme: cosmo
-  pdf:
-    documentclass: scrreprt
+    theme:
+      light: [cosmo, theme.scss] # from https://github.com/sta210-s22/website/blob/main/_quarto.yml
+      dark: [cosmo, theme-dark.scss]
+    code-copy: true
+    code-overflow: wrap
+    toc: true
 
-execute:
-  freeze: auto
+
+filters:
+  - include-files.lua
+  - quarto

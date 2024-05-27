@@ -1,5 +1,28 @@
-# Preface {.unnumbered}
+---
+title: "PyCologne Community Website"
+subtitle: "Open-source tutorials, onboarding docs, and much more"
+---
 
-This is a Quarto book.
+## Welcome {#welcome}
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>
+This is the PyCologne Community website. Here we share knowledge, pin our documentation
+and distribute information for external parties.
+
+## What is PyCologne?
+
+We are a volunteer-led local Python Community Group in Cologne and 
+invite everyone to participate to make this community thrive!
+We follow the [code of conduct](https://policies.python.org/python.org/code-of-conduct/) of the Python Software Foundation. 
+
+## Documentation
+
+You are looking at it. This will grow over time.
+For event-organisation we use the GitHub repository in the resources below.
+
+## Resources 
+
+A few places where you can find us:
+
+-   [GitHub](https://github.com/pycologne-group)
+-   [Meetup](https://www.meetup.com/pycologne)
+-   [Discord](https://discord.gg/AbadjmRpZN)
