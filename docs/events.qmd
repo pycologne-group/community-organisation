@@ -1,0 +1,22 @@
+---
+title: "Events"
+---
+
+Events form the core of our community culture, and we organize them regularly. Who can run an event for PyCologne? In short, anyone! If you have something you want to share with the community, we encourage you to do so. 
+
+## Where can I find upcoming events?
+
+We use a [Meetup Group](https://www.meetup.com/pycologne) to announce and share events with the public.
+
+## How can I contribute?
+
+We have set up a GitHub [organisers' repository](https://github.com/pycologne-group/community-organisation) where issue templates guide you through the steps involved in planning and executing an event. Longer discussions take place at the monthly orga meetings on our [Discord server](https://discord.gg/AbadjmRpZN). Do not hesitate to ask for support in the help channel on this server.
+
+
+## Code of Conduct
+
+All events follow the PSF's [code of conduct](https://policies.python.org/python.org/code-of-conduct/).
+
+## Health & Safety Policy
+
+Since [April 8, 2023](https://www.mags.nrw/coronavirus-rechtlicheregelungen-nrw), there are no longer any government COVID-19 protection regulations in North Rhine-Westphalia, Germany. As our events take place in this region, we currently do not impose any COVID-related policies. However, we continue to monitor official health regulations and ask event participants to skip any events if they feel any signs of sickness.

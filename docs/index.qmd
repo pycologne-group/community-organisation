@@ -17,7 +17,8 @@ We follow the [code of conduct](https://policies.python.org/python.org/code-of-c
 ## Documentation
 
 You are looking at it. This will grow over time.
-For event-organisation we use the GitHub repository in the resources below.
+
+For event-organisation, check out the [events page](./events.qmd).
 
 ## Resources 
 

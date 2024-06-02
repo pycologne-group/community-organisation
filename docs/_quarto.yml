@@ -26,6 +26,8 @@ website:
     contents:
       - href: index.qmd
         text: Welcome
+      - href: events.qmd
+        text: Events
 
 format:
   html:
