@@ -1,5 +1,55 @@
 [
   {
+    "objectID": "events.html",
+    "href": "events.html",
+    "title": "Events",
+    "section": "",
+    "text": "Events form the core of our community culture, and we organize them regularly. Who can run an event for PyCologne? In short, anyone! If you have something you want to share with the community, we encourage you to do so.",
+    "crumbs": [
+      "Events"
+    ]
+  },
+  {
+    "objectID": "events.html#where-can-i-find-upcoming-events",
+    "href": "events.html#where-can-i-find-upcoming-events",
+    "title": "Events",
+    "section": "Where can I find upcoming events?",
+    "text": "Where can I find upcoming events?\nWe use a Meetup Group to announce and share events with the public.",
+    "crumbs": [
+      "Events"
+    ]
+  },
+  {
+    "objectID": "events.html#how-can-i-contribute",
+    "href": "events.html#how-can-i-contribute",
+    "title": "Events",
+    "section": "How can I contribute?",
+    "text": "How can I contribute?\nWe have set up a GitHub organisers’ repository where issue templates guide you through the steps involved in planning and executing an event. Longer discussions take place at the monthly orga meetings on our Discord server. Do not hesitate to ask for support in the help channel on this server.",
+    "crumbs": [
+      "Events"
+    ]
+  },
+  {
+    "objectID": "events.html#code-of-conduct",
+    "href": "events.html#code-of-conduct",
+    "title": "Events",
+    "section": "Code of Conduct",
+    "text": "Code of Conduct\nAll events follow the PSF’s code of conduct.",
+    "crumbs": [
+      "Events"
+    ]
+  },
+  {
+    "objectID": "events.html#health-safety-policy",
+    "href": "events.html#health-safety-policy",
+    "title": "Events",
+    "section": "Health & Safety Policy",
+    "text": "Health & Safety Policy\nSince April 8, 2023, there are no longer any government COVID-19 protection regulations in North Rhine-Westphalia, Germany. As our events take place in this region, we currently do not impose any COVID-related policies. However, we continue to monitor official health regulations and ask event participants to skip any events if they feel any signs of sickness.",
+    "crumbs": [
+      "Events"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "PyCologne Community Website",
@@ -34,7 +84,7 @@
     "href": "index.html#documentation",
     "title": "PyCologne Community Website",
     "section": "Documentation",
-    "text": "Documentation\nYou are looking at it. This will grow over time. For event-organisation we use the GitHub repository in the resources below.",
+    "text": "Documentation\nYou are looking at it. This will grow over time.\nFor event-organisation, check out the events page.",
     "crumbs": [
       "Welcome"
     ]
