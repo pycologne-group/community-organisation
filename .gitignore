@@ -5,6 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
+.quarto/
 
 # Distribution / packaging
 .Python
@@ -70,6 +71,7 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+docs/_book/
 
 # PyBuilder
 .pybuilder/
