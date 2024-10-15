@@ -27,3 +27,4 @@ A few places where you can find us:
 -   [GitHub](https://github.com/pycologne-group)
 -   [Meetup](https://www.meetup.com/pycologne)
 -   [Discord](https://discord.gg/AbadjmRpZN)
+-   [Email](mailto:info@pycologne.org)
