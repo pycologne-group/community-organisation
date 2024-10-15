@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "community-organisation"
 version = "0.1.0"
-description = "Directory for generating community docs with Jupyter books."
-authors = ["PyCologne <info@jn.contact>"]
+description = "Directory for generating community docs."
+authors = ["PyCologne <info@pycologne.org>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
