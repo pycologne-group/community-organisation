@@ -14,7 +14,7 @@ If you want to create a new event, we encourage you to open a new issue to track
 
 ## :satellite: Contact us
 
-You can reach us either through [email](info@pycologne.org) or on [discord](https://discord.gg/AbadjmRpZN).
+You can reach us either through [email](mailto:info@pycologne.org) or on [discord](https://discord.gg/AbadjmRpZN).
 
 
 ## :v: Code of conduct
